@@ -9,6 +9,14 @@ import { PropertiesListComponent } from './website/properties/properties-list/pr
 import { PropertiesItemComponent } from './website/properties/properties-item/properties-item.component';
 import { ServicesComponent } from './website/properties/services/services.component';
 import { LoginComponent } from './website/auth/login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { NavigationComponent } from './website/UI/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +27,19 @@ import { LoginComponent } from './website/auth/login/login.component';
     PropertiesItemComponent,
     ServicesComponent,
     LoginComponent,
+    NavigationComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
