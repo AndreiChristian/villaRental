@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Viaoda+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Gilda+Display&family=Viaoda+Libre&display=swap");
 
 html,
 body {
@@ -8,16 +8,23 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Gilda Display", serif;
+}
+
+*{
+  font-family: "Gilda Display", serif;
 }
 
 :root {
-  --title-font: "Cinzel Decorative", cursive;
-  --paragraph-font: "Viaoda Libre", cursive;
+  --font: "Gilda Display", serif;
+  --white-text: #fff;
+  --black-text: #000;
+  --grey-text: #333;
+  --light-grey-text: #999;
 
   --title-font-size: clamp(1.5rem, 6vw, 2.5rem);
   --subtitle-font-size: clamp(1rem, 4vw, 2rem);
-  --p-font-size: clamp(0.8rem, 2vw, 1.5rem);
+  --p-font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 
   --image-overlay: linear-gradient(
     to bottom,

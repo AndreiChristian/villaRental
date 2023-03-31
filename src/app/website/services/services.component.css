@@ -1,0 +1,83 @@
+.hero {
+  background: var(--image-overlay),
+    url("src/assets/images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+  color: var(--white-text);
+}
+
+.hero p {
+  font-size: var(--title-font-size);
+  font-family: var(--title-font);
+  width: 80%;
+  font-style: italic;
+  line-height: 4rem;
+  text-align: center;
+  margin-bottom: 10vh;
+  color: var(--white-text);
+}
+
+section:nth-child(2) {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(2) p {
+  width: 60%;
+  color: var(--font);
+  font-size: var(--subtitle-font-size);
+  font-style: italic;
+  line-height: 4rem;
+}
+
+section.p {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  /* padding: 1vh;
+  gap: 1vw; */
+}
+
+.p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.p h3 {
+  font-size: var(--subtitle-font-size);
+  color: var(--black-text);
+  text-align: center;
+  font-family: var(--font);
+}
+
+.p p {
+  font-size: var(--p-font-size);
+  width: 80%;
+  color: var(--light-grey-text);
+}
+
+.p img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .p {
+    grid-template-columns: 1fr;
+  }
+}
