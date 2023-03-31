@@ -10,6 +10,10 @@
   </div>
 </section>
 
-<section class="carousel">
-  <app-carousel [items]="[1,2,3,4,5]"></app-carousel>
+<section class="cards">
+  <div *ngFor="let property of properties" class="card-item">
+    <img [src]="property.src" alt="villa1" />
+    <p>{{property.name}}</p>
+    <button>Discover</button>
+  </div>
 </section>
