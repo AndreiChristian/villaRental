@@ -1,0 +1,17 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.carousel-item {
+  display: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-item.active {
+  display: block;
+}

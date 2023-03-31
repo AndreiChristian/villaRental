@@ -6,7 +6,7 @@ main {
 
 .hero {
   background: var(--image-overlay),
-    url("/assets/images/ciudad-maderas-MXbM1NrRqtI-unsplash.jpg");
+    url("src/assets/images/services/ibrahim-mushan-nzPzTkwl5VI-unsplash.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;

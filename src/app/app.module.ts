@@ -21,6 +21,7 @@ import { SidenavComponent } from './website/UI/sidenav/sidenav.component';
 import { HeaderComponent } from './website/UI/header/header.component';
 import { AboutComponent } from './website/about/about.component';
 import { FooterComponent } from './website/UI/footer/footer.component';
+import { CarouselComponent } from './website/UI/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FooterComponent } from './website/UI/footer/footer.component';
     SidenavComponent,
     HeaderComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="carousel-container">
+  <ng-container *ngFor="let item of items; index as i">
+    <div class="carousel-item" [ngClass]="{ 'active': i === activeIndex }">
+      {{ item }}
+    </div>
+  </ng-container>
+  <button (click)="prev()">Previous</button>
+  <button (click)="next()">Next</button>
+</div>
+
