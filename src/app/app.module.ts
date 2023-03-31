@@ -17,6 +17,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavigationComponent } from './website/UI/navigation/navigation.component';
+import { SidenavComponent } from './website/UI/sidenav/sidenav.component';
+import { HeaderComponent } from './website/UI/header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { NavigationComponent } from './website/UI/navigation/navigation.componen
     PropertiesItemComponent,
     ServicesComponent,
     LoginComponent,
-    NavigationComponent
+    NavigationComponent,
+    SidenavComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
