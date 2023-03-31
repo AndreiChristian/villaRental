@@ -52,3 +52,10 @@
   padding: 1.5vw;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.186);
 }
+
+.carousel{
+  background: var(--reversed-dark-overlay), url("src/assets/images/services/cristian-escobar-gRGsAtWUsQw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

@@ -1,17 +1,32 @@
 .carousel-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+}
+
+.carousel-button {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
 }
 
 .carousel-item {
-  display: none;
-  height: 100%;
+  flex-shrink: 0;
   width: 100%;
   text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  opacity: 0.5;
+  /* background-color: red; */
+  outline: 1px solid pink;
 }
 
-.carousel-item.active {
-  display: block;
+.carousel-item.central {
+  opacity: 1;
+  transform: scale(1.2);
 }

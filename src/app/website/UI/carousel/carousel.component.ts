@@ -3,27 +3,23 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.css']
+  styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent implements OnInit {
-  @Input() items: any[] = []
-  activeIndex = 0;
+  @Input() items: any[] = [];
+  currentIndex = 0;
 
-  ngOnInit() {
-    this.showCurrentItem();
+  constructor() { }
+
+  ngOnInit(): void {
+    this.currentIndex = Math.floor(this.items.length / 2);
   }
 
-  showCurrentItem() {
-    this.activeIndex = (this.activeIndex + this.items.length) % this.items.length;
-  }
-
-  prev() {
-    this.activeIndex = (this.activeIndex - 1 + this.items.length) % this.items.length;
-    this.showCurrentItem();
-  }
-
-  next() {
-    this.activeIndex = (this.activeIndex + 1) % this.items.length;
-    this.showCurrentItem();
+  move(direction: number): void {
+    if (direction > 0) {
+      this.currentIndex = (this.currentIndex + 1) % this.items.length;
+    } else {
+      this.currentIndex = (this.currentIndex - 1 + this.items.length) % this.items.length;
+    }
   }
 }
