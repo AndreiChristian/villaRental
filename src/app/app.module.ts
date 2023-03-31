@@ -19,6 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { NavigationComponent } from './website/UI/navigation/navigation.component';
 import { SidenavComponent } from './website/UI/sidenav/sidenav.component';
 import { HeaderComponent } from './website/UI/header/header.component';
+import { AboutComponent } from './website/about/about.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HeaderComponent } from './website/UI/header/header.component';
     LoginComponent,
     NavigationComponent,
     SidenavComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
