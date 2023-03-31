@@ -20,6 +20,7 @@ import { NavigationComponent } from './website/UI/navigation/navigation.componen
 import { SidenavComponent } from './website/UI/sidenav/sidenav.component';
 import { HeaderComponent } from './website/UI/header/header.component';
 import { AboutComponent } from './website/about/about.component';
+import { FooterComponent } from './website/UI/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AboutComponent } from './website/about/about.component';
     NavigationComponent,
     SidenavComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

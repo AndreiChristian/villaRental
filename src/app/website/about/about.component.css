@@ -1,6 +1,7 @@
 main {
   background-color: black;
   height: 100%;
+  font-family: "Viaoda Libre", cursive;
 }
 
 .hero {
@@ -14,16 +15,15 @@ main {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: last baseline;
   justify-content: center;
-
 }
 
 .hero p {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   width: 80%;
   font-style: italic;
   line-height: 4rem;
@@ -31,9 +31,7 @@ main {
   margin-bottom: 10vh;
 }
 
-
 .content {
-  font-family: 'Cinzel Decorative', cursive;
   background-color: black;
   box-sizing: border-box;
   padding: 3vh;
@@ -42,3 +40,12 @@ main {
   gap: 3vh;
 }
 
+@media (max-width: 768px) {
+  .hero p {
+    line-height: 2rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

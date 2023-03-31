@@ -1,14 +1,14 @@
 .sidenav-container {
   height: 100%;
-  font-family: 'Cinzel Decorative', cursive;
 }
 
 .sidenav {
   width: 200px;
+  background: black;
 }
 
-.sidenav .mat-toolbar {
-  background: inherit;
+.sidenav a{
+  font-family: 'Viaoda Libre', cursive;
 }
 
 .mat-toolbar {
@@ -20,7 +20,14 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
+  z-index: 5;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
   z-index: 1;
+  border-bottom: 2px solid white;
 }
 
 ul {
@@ -34,5 +41,5 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Viaoda Libre", cursive;
 }
