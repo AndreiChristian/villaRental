@@ -7,7 +7,7 @@ import { HomeComponent } from './website/home/home.component';
 import { PropertiesComponent } from './website/properties/properties.component';
 import { PropertiesListComponent } from './website/properties/properties-list/properties-list.component';
 import { PropertiesItemComponent } from './website/properties/properties-item/properties-item.component';
-import { ServicesComponent } from './website/properties/services/services.component';
+import { ServicesComponent } from './website/services/services.component';
 import { LoginComponent } from './website/auth/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';

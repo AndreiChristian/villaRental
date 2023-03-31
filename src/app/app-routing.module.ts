@@ -5,7 +5,7 @@ import { LoginComponent } from './website/auth/login/login.component';
 import { HomeComponent } from './website/home/home.component';
 import { PropertiesItemComponent } from './website/properties/properties-item/properties-item.component';
 import { PropertiesComponent } from './website/properties/properties.component';
-import { ServicesComponent } from './website/properties/services/services.component';
+import { ServicesComponent } from './website/services/services.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
