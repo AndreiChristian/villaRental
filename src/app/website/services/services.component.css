@@ -1,6 +1,6 @@
 .hero {
   background: var(--image-overlay),
-    url("src/assets/images/services/ash-edmonds-DhHMOrQd7jE-unsplash.jpg");
+    url("/assets/images/services/ash-edmonds-DhHMOrQd7jE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;

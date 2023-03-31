@@ -11,7 +11,7 @@ body {
   font-family: "Gilda Display", serif;
 }
 
-*{
+* {
   font-family: "Gilda Display", serif;
 }
 
@@ -23,8 +23,8 @@ body {
   --light-grey-text: #999;
 
   --title-font-size: clamp(1.5rem, 6vw, 2.5rem);
-  --subtitle-font-size: clamp(1rem, 4vw, 2rem);
-  --p-font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+  --subtitle-font-size: clamp(1rem, 3vw, 1.8rem);
+  --p-font-size: clamp(0.7rem, 1vw, 1.3rem);
 
   --image-overlay: linear-gradient(
     to bottom,
