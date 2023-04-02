@@ -1,0 +1,19 @@
+section {
+  background: var(--image-overlay),
+    url("/assets/images/services/ash-edmonds-DhHMOrQd7jE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh;
+
+}
+
+h1{
+  font-size: var(--title-font-size);
+  font-family: var(--font);
+}

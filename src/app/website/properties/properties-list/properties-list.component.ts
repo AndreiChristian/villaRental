@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { PropertyType } from 'src/app/interfaces/property.interface';
 
 @Component({
   selector: 'app-properties-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./properties-list.component.css']
 })
 export class PropertiesListComponent {
-
+  @Input() properties:PropertyType[]
 }

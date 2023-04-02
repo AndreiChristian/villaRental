@@ -1,6 +1,6 @@
-export type PropertyType = {
+export interface PropertyType {
   id: number;
   name: string;
   description: string;
   src: string;
-};
+}

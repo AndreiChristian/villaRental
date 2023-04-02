@@ -1,1 +1,7 @@
-<p>properties-list works!</p>
+<div class="properties-list">
+  <div *ngFor="let property of properties" class="card">
+    <img [src]="property.src" />
+    <div class="title">{{property.name}}</div>
+    <button>Discover</button>
+  </div>
+</div>
