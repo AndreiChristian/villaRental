@@ -9,6 +9,8 @@ import { ServicesComponent } from './website/services/services.component';
 import { PropertiesListComponent } from './website/properties/properties-list/properties-list.component';
 import { FormComponent } from './website/form/form.component';
 import { WebsiteComponent } from './website/website.component';
+import { UserFormComponent } from './website/form/user-form/user-form.component';
+import { ListFormComponent } from './website/form/list-form/list-form.component';
 
 const routes: Routes = [
   {
@@ -29,7 +31,14 @@ const routes: Routes = [
       { path: 'about', component: AboutComponent },
     ],
   },
-  { path: 'form', component: FormComponent },
+  {
+    path: 'form',
+    component: FormComponent,
+    children: [
+      { path: '', component: UserFormComponent },
+      { path: 'list', component: ListFormComponent },
+    ],
+  },
 ];
 
 @NgModule({
