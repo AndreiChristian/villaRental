@@ -1,6 +1,21 @@
 <section class="hero" [style.background]="' var(--image-overlay), url(' +
   property.src + ')
   center/cover no-repeat'">
+
   <div class="title">{{property.name}}</div>
-  <app-properties-date></app-properties-date>
+</section>
+<section class="description">
+  <p>{{property.description}}</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quidem
+    harum animi ducimus facere doloribus molestiae tempora. Doloribus laboriosam
+    nulla atque quidem provident perferendis aliquid quis dolores! Quasi,
+    voluptas nobis.</p>
+</section>
+<section class="date">
+  <div class="card">
+    <div class="title">Select the dates for your stay!</div>
+    <app-properties-date></app-properties-date>
+    <div>Selected dates : </div>
+    <button>Book</button>
+  </div>
 </section>

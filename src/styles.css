@@ -22,7 +22,7 @@ body {
   --grey-text: #333;
   --light-grey-text: #999;
 
-  --title-font-size: clamp(1.5rem, 6vw, 2.5rem);
+  --title-font-size: clamp(1.5rem, 8vw, 3rem);
   --subtitle-font-size: clamp(1rem, 3vw, 1.8rem);
   --p-font-size: clamp(0.7rem, 1vw, 1.3rem);
 
@@ -40,5 +40,5 @@ body {
     rgba(0, 0, 0, 0.6)
   );
 
-  --transparent-black: rgba(0, 0, 0, 0.8);
+  --transparent-black: rgba(0, 0, 0, 0.95);
 }
