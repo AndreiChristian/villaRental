@@ -7,20 +7,29 @@ import { PropertiesItemComponent } from './website/properties/properties-item/pr
 import { PropertiesComponent } from './website/properties/properties.component';
 import { ServicesComponent } from './website/services/services.component';
 import { PropertiesListComponent } from './website/properties/properties-list/properties-list.component';
+import { FormComponent } from './website/form/form.component';
+import { WebsiteComponent } from './website/website.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
   {
-    path: 'properties',
-    component: PropertiesComponent,
+    path: '',
+    component: WebsiteComponent,
     children: [
-      { path: '', component: PropertiesListComponent },
-      { path: ':id', component: PropertiesItemComponent },
+      { path: '', component: HomeComponent },
+      {
+        path: 'properties',
+        component: PropertiesComponent,
+        children: [
+          { path: '', component: PropertiesListComponent },
+          { path: ':id', component: PropertiesItemComponent },
+        ],
+      },
+      { path: 'services', component: ServicesComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'about', component: AboutComponent },
     ],
   },
-  { path: 'services', component: ServicesComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'form', component: FormComponent },
 ];
 
 @NgModule({

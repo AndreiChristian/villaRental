@@ -20,6 +20,8 @@ import { FooterComponent } from './website/UI/footer/footer.component';
 import { CarouselComponent } from './website/UI/carousel/carousel.component';
 import { MaterialModule } from './material.module';
 import { PropertiesDateComponent } from './website/properties/properties-date/properties-date.component';
+import { FormComponent } from './website/form/form.component';
+import { WebsiteComponent } from './website/website.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { PropertiesDateComponent } from './website/properties/properties-date/pr
     FooterComponent,
     CarouselComponent,
     PropertiesDateComponent,
+    FormComponent,
+    WebsiteComponent,
   ],
   imports: [
     BrowserModule,
