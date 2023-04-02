@@ -11,17 +11,14 @@ import { ServicesComponent } from './website/services/services.component';
 import { LoginComponent } from './website/auth/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+
 import { NavigationComponent } from './website/UI/navigation/navigation.component';
 import { SidenavComponent } from './website/UI/sidenav/sidenav.component';
 import { HeaderComponent } from './website/UI/header/header.component';
 import { AboutComponent } from './website/about/about.component';
 import { FooterComponent } from './website/UI/footer/footer.component';
 import { CarouselComponent } from './website/UI/carousel/carousel.component';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -37,20 +34,16 @@ import { CarouselComponent } from './website/UI/carousel/carousel.component';
     HeaderComponent,
     AboutComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
+    MaterialModule
   ],
-  providers: [],
+  providers: [MaterialModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
