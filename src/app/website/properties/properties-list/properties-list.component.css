@@ -1,13 +1,32 @@
+section {
+  background: var(--image-overlay),
+    url("/assets/images/services/ash-edmonds-DhHMOrQd7jE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+h1 {
+  font-size: var(--title-font-size);
+  font-family: var(--font);
+}
+
 .properties-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* place-items: center; */
   width: 100%;
-  outline: 3px solid rebeccapurple;
+  gap: 2vw;
 }
 
 .card {
-  width: 40vh;
+  width: 20vw;
   height: 60vh;
   display: flex;
   align-items: center;

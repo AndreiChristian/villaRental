@@ -35,4 +35,8 @@ export class PropertyService {
       src: 'assets/images/villas/4.jpg',
     },
   ];
+
+  getPropertyById(id: number) {
+    return this.properties.find((property) => property.id === id);
+  }
 }

@@ -6,17 +6,21 @@ import { HomeComponent } from './website/home/home.component';
 import { PropertiesItemComponent } from './website/properties/properties-item/properties-item.component';
 import { PropertiesComponent } from './website/properties/properties.component';
 import { ServicesComponent } from './website/services/services.component';
+import { PropertiesListComponent } from './website/properties/properties-list/properties-list.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'properties',
     component: PropertiesComponent,
-    children: [{ path: ':id', component: PropertiesItemComponent }],
+    children: [
+      { path: '', component: PropertiesListComponent },
+      { path: ':id', component: PropertiesItemComponent },
+    ],
   },
   { path: 'services', component: ServicesComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'about', component: AboutComponent},
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({
