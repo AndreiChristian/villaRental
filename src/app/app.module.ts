@@ -22,6 +22,14 @@ import { MaterialModule } from './material.module';
 import { PropertiesDateComponent } from './website/properties/properties-date/properties-date.component';
 import { FormComponent } from './website/form/form.component';
 import { WebsiteComponent } from './website/website.component';
+import { UserFormComponent } from './website/form/user-form/user-form.component';
+import { ListFormComponent } from './website/form/list-form/list-form.component';
+import { FormNavigationComponent } from './website/form/form-navigation/form-navigation.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -41,13 +49,21 @@ import { WebsiteComponent } from './website/website.component';
     PropertiesDateComponent,
     FormComponent,
     WebsiteComponent,
+    UserFormComponent,
+    ListFormComponent,
+    FormNavigationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MaterialModule
+    MaterialModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [MaterialModule],
   bootstrap: [AppComponent],
