@@ -25,8 +25,16 @@ export class PropertiesComponent {
 
   ngOnInit(): void {
     console.log("hello")
-    this.store.select(getPropertiesList).subscribe((data) => {
-      console.log(data);
-    });
+    try {
+      this.store.select(getPropertiesList).subscribe((data) => {
+        console.log(data);
+      });
+      // console.log(this.properties$);
+    } catch (error) {
+      console.log(error);
+    }
+    // this.store.select(getPropertiesList).subscribe((data) => {
+    //   console.log(data);
+    // });
   }
 }

@@ -1,7 +1,7 @@
 import { PropertyType } from 'src/app/interfaces/property.interface';
 import { propertiesReducer } from './properties/properties.reducer';
 
-export interface appState {
+export interface AppState {
   properties: PropertyType[];
 }
 
