@@ -33,8 +33,5 @@ export class PropertiesComponent {
     } catch (error) {
       console.log(error);
     }
-    // this.store.select(getPropertiesList).subscribe((data) => {
-    //   console.log(data);
-    // });
   }
 }
