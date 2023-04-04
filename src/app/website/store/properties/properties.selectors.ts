@@ -1,6 +1,7 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { PropertyType } from 'src/app/interfaces/property.interface';
 import { AppState } from '../app.state';
+import { propertiesState } from './properties.state';
 
 // const getCounterState = createFeatureSelector<CounterState>('counter');
 
@@ -8,10 +9,10 @@ import { AppState } from '../app.state';
 //   return state.counter;
 // });
 
-const getPropertiesState = createFeatureSelector<PropertyType[]>('properties');
+const getPropertiesState = createFeatureSelector<propertiesState>('properties');
 
 export const getPropertiesList = createSelector(
-  createFeatureSelector,
+  getPropertiesState,
   (state) => {
     return state;
   }
