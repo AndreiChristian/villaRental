@@ -1,6 +1,6 @@
 import { PropertyType } from 'src/app/interfaces/property.interface';
 
-export const properties: PropertyType[] = [
+export const propertiesState: PropertyType[] = [
   {
     id: 1,
     name: 'Villa Magnolia',

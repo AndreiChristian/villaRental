@@ -31,6 +31,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { StoreModule } from '@ngrx/store';
+import { propertiesReducer } from './website/store/properties/properties.reducer';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,7 @@ import { StoreModule } from '@ngrx/store';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({ properties: propertiesReducer }, {}),
   ],
   providers: [MaterialModule],
   bootstrap: [AppComponent],
