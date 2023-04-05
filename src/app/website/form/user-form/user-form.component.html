@@ -1,1 +1,34 @@
-<p>user-form works!</p>
+<section>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h1>Please complete the form!</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+        <mat-form-field appearance="outline">
+          <mat-label>NAME</mat-label>
+          <input matInput placeholder="ex John Doe">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>EMAIL</mat-label>
+          <input type="email" matInput placeholder="ex johndoe@gmail.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>PHONE</mat-label>
+          <input matInput placeholder="12345678">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>We believe in creating unique experiences! In order to so, let us know
+        exactly how should we prepare for your stay!</p>
+      <div class="actions">
+        <button>Complete the form now!</button>
+        <button> Request a phone call! </button>
+        <button> Configure later! </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</section>
